@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const { userRouter } = require("./routes/user");
 const { courseRouter } = require("./routes/course");
+const { adminRouter } = require("./routes/admin");
 const port = 3000
 
 app.get('/', (req, res) => {
