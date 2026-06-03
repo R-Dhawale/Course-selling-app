@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const adminRouter = Router();
+const { adminModel } = require("../db");
 
 adminRouter.post("/signup", function (req, res){
     res.json({
@@ -13,7 +14,6 @@ adminRouter.post("/signin", function (req, res){
     })
 });
 
-adminRouter.use(admminMiddleware);  
 
 adminRouter.post("/course", function (req, res){
     res.json({
