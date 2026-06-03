@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-console.log("Connecting to MongoDB...");
-mongoose.connect("mongodb+srv://100xdev:n%40ZG24Si3cfjxG8@cluster0.bcfulpq.mongodb.net/coursera-app");
+
 const Schema = mongoose.Schema;
 const objectId = mongoose.Types.ObjectId;
 
